@@ -1,6 +1,6 @@
 # RichField Chairs
 
-Book Paradise 📖📙 : This is a simple bookstore 📚 web template or A Simple Mini Project, but this is very attractive ✨ and beautiful 😍 you must check out this design. I was make it for Fun 😋.
+This is an accessibility-focused ♿ e-commerce website for chairs, designed with a brown and orange color palette (Hex codes) and enhanced with smooth transitions and animations, built using 🟠HTML, 🔵CSS, and 🟡JavaScript.
 
 ## Screenshots
 

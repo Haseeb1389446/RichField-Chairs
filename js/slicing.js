@@ -12,13 +12,13 @@ document.querySelector(".navbar").innerHTML = `
                                 <ul>
                                     <h4>CHAIRS BRANDS</h4>
                                     <hr>
-                                    <li><a href="leo.html">LEO <span>&#8594;</span></a></li>
-                                    <li><a href="vaseat.html">VASEAT <span>&#8594;</span></a></li>
-                                    <li><a href="steelcase.html">STEELCASE <span>&#8594;</span></a></li>
-                                    <li><a href="lamex.html">LAMEX <span>&#8594;</span></a></li>
-                                    <li><a href="knoll.html">KNOLL <span>&#8594;</span></a></li>
-                                    <li><a href="lazboy.html">LAZ BOY <span>&#8594;</span></a></li>
-                                    <li><a href="hni.html">HNI <span>&#8594;</span></a></li><br>
+                                    <li><a href="brand.html?brand=leo">LEO <span>&#8594;</span></a></li>
+                                    <li><a href="brand.html?brand=vaseat">VASEAT <span>&#8594;</span></a></li>
+                                    <li><a href="brand.html?brand=steelcase">STEELCASE <span>&#8594;</span></a></li>
+                                    <li><a href="brand.html?brand=lamex">LAMEX <span>&#8594;</span></a></li>
+                                    <li><a href="brand.html?brand=knoll">KNOLL <span>&#8594;</span></a></li>
+                                    <li><a href="brand.html?brand=lazboy">LAZ BOY <span>&#8594;</span></a></li>
+                                    <li><a href="brand.html?brand=hni">HNI <span>&#8594;</span></a></li><br>
                                 </ul>
                             </li>
                             <li><a href="comparison.html">product comparison</a></li>
@@ -85,13 +85,13 @@ document.querySelector(".footer").innerHTML = `<div class="foot-container">
        <div class="footer-col">
            <h4>Brands</h4>
            <ul>
-               <li><a href="leo.html">Leo</a></li>
-               <li><a href="Vaseat.html">Vaseat</a></li>
-               <li><a href="Steelcase.html">Steelcase</a></li>
-               <li><a href="lamex.html">lamex</a></li>
-               <li><a href="Knoll.html">Knoll</a></li>
-               <li><a href="Lazboy.html">Laz boy</a></li>
-               <li><a href="hni.html">hni</a></li>
+               <li><a href="brand.html?brand=leo">Leo</a></li>
+               <li><a href="brand.html?brand=vaseat">Vaseat</a></li>
+               <li><a href="brand.html?brand=steelcase">Steelcase</a></li>
+               <li><a href="brand.html?brand=lamex">lamex</a></li>
+               <li><a href="brand.html?brand=knoll">Knoll</a></li>
+               <li><a href="brand.html?brand=lazboy">Laz boy</a></li>
+               <li><a href="brand.html?brand=hni">hni</a></li>
            </ul>
        </div>
        <div class="footer-col">

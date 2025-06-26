@@ -524,7 +524,7 @@ hni: [
         desc: "this is an desk or office chair looking premium for our tasks",
       price: "1299",
     }
-  ],
+  ]    
 };
 
 // Brands Data End
@@ -553,7 +553,7 @@ if(brandData[brand]) {
                   <li><i class="fa fa-star checked"></i></li>
                   <li><i class="fa fa-star"></i></li>
               </ul>
-              <button><a href="detailpage.html?brand=leo&id=${index}">buy now</a></button>
+              <button><a href="detailpage.html?brand=${brand}&id=${index}">buy now</a></button>
           </div>
         `;
     });

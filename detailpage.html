@@ -26,13 +26,13 @@
   <!-- navbar end -->
 
   <div class="container">
-
+    
     <div class="card">
 
       <!-- card left -->
 
       <div class="product-imgs">
-        <img src="" id="img" alt="chair image">
+        <img src="" id="img" alt="chair image" height="700px" height="700px">
       </div>
 
       <!-- card right -->
@@ -53,7 +53,7 @@
         <div class="product-price">
           <p class="price">Price: &nbsp;&nbsp;<span id="price"></span></p>
         </div>
-
+        
         <div class="product-detail">
           <h2>about this item: </h2>
           <p id="desc"></p>
@@ -68,15 +68,22 @@
           </button>
         </div>
         
-        <script src="js/brand.js"></script>
-        <script>
-          var url = new URL(window.location.href);
-          var id = url.searchParams.get("id");
-          document.getElementById("img").src = leo[id].img;
-          document.querySelector(".product-title").innerText = leo[id].title;
-          document.getElementById("desc").innerText = leo[id].desc;
-          document.getElementById("price").innerText = leo[id].price;
-      </script>
-      </body>
+    </div>
+      
+    <script src="js/brand.js"></script>
+    <script src="js/slicing.js"></script>
+    <script>
+      var url = new URL(window.location.href);
+      var brand = url.searchParams.get("brand");
+      var id = parseInt(url.searchParams.get("id"));
+
+      var brandItems = brandData[brand];
+      
+      document.getElementById("img").src = brandItems[id].img;
+      document.querySelector(".product-title").innerText = brandItems[id].title;
+      document.getElementById("desc").innerText = brandItems[id].desc;
+      document.getElementById("price").innerText = brandItems[id].price;
+    </script>
+  </body>
 
 </html>

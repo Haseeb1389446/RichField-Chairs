@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     navbar.innerHTML = `<nav>
                  <div class="nav1">
-                     <div class="logo"><img src="img/logo.png" alt="" id="main-logo"></div>
+                     <div class="logo"><img src="images/logo.png" alt="logo" id="main-logo"></div>
                      <div class="navigation">
                          <ul>
                              <li><a href="index.html">Home</a></li>
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       <div class="f-row2">
           <div class="footer-col">
-              <img src="img/logo.png" alt="" id="main-footer">
+              <img src="images/logo.png" alt="" id="main-footer">
            <br>
               <p>We sell different types of chairs...</p>
           </div>
@@ -131,11 +131,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.body.classList.toggle("light-theme");
     if (document.body.classList.contains("light-theme")) {
-      logo.src = "img/logo2.png";
-      footlogo.src = "img/logo2.png";
+      logo.src = "images/logo2.png";
+      footlogo.src = "images/logo2.png";
     } else {
-      logo.src = "img/logo.png";
-      footlogo.src = "img/logo.png";
+      logo.src = "images/logo.png";
+      footlogo.src = "images/logo.png";
     }
   }
 

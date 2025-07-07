@@ -1,3 +1,7 @@
+if (localStorage.getItem('theme') === 'light') {
+  document.documentElement.classList.add('light-theme');
+}
+
 document.addEventListener("DOMContentLoaded", function() {
 
   var navbar = document.querySelector(".navbar");
@@ -113,40 +117,38 @@ document.addEventListener("DOMContentLoaded", function() {
 
   }
 
+  syncLogos();          
   
-
-
-
-
-   
 });
 
 
-  // DARK AND LIGHT THEME
+// DARK AND LIGHT THEME
 
-  function themetoggle() {
-    var icon = document.getElementById("icon");
-    var logo = document.getElementById("main-logo");
-    var footlogo = document.getElementById("main-footer");
+function syncLogos() {
+  const light    = document.documentElement.classList.contains('light-theme');
+  const src      = light ? 'images/logo2.png' : 'images/logo.png';
+  const logo     = document.getElementById('main-logo');
+  const footLogo = document.getElementById('main-footer');
+  if (logo)      logo.src = src;
+  if (footLogo)  footLogo.src = src;
+}
 
-    document.body.classList.toggle("light-theme");
-    if (document.body.classList.contains("light-theme")) {
-      logo.src = "images/logo2.png";
-      footlogo.src = "images/logo2.png";
-    } else {
-      logo.src = "images/logo.png";
-      footlogo.src = "images/logo.png";
-    }
-  }
 
-  //   POP UP
+function themetoggle() {
+  const root  = document.documentElement;
+  root.classList.toggle('light-theme');
+  localStorage.setItem('theme',
+      root.classList.contains('light-theme') ? 'light' : 'dark');
+  syncLogos();
+}
 
-  function showmodal() {
-    document.querySelector(".overlay").classList.add("show-overlay");
-    document.querySelector(".login-form").classList.add("show-login-form");
-  }
+//   POP UP
 
-  function hidemodal() {
-    document.querySelector(".overlay").classList.remove("show-overlay");
-    document.querySelector(".login-form").classList.remove("show-login-form");
-  }
+function showmodal() {
+  document.querySelector('.overlay') .classList.add   ('show-overlay');
+  document.querySelector('.login-form').classList.add('show-login-form');
+}
+function hidemodal() {
+  document.querySelector('.overlay') .classList.remove   ('show-overlay');
+  document.querySelector('.login-form').classList.remove('show-login-form');
+}

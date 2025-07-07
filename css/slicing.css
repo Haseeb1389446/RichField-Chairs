@@ -12,13 +12,13 @@
     --sixth-color: rgba(30, 18, 18, 0.51);
 }
 
-.light-theme{
-    --primary-color: #ffffffb2;
+.light-theme {
+    --primary-color: #fdfcfa;
     --secondary-color: #1B1717;
-    --third-color: #be7920e0;
-    --four-color: #1B1717;
-    --fifth-color: #1B1717;
-    --sixth-color: white;
+    --third-color: #e7e3dc;
+    --four-color: #be7a20;
+    --fifth-color: #444444;
+    --sixth-color: rgba(255, 255, 255, 0.85);
 }
 
 button {

@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     navbar.innerHTML = `<nav>
                  <div class="nav1">
-                     <div class="logo"><img src="images/logo.png" alt="logo" id="main-logo"></div>
+                     <div class="logo"><a href='index.html'><img src="images/logo.png" alt="logo" id="main-logo"></a></div>
                      <div class="navigation">
                          <ul>
                              <li><a href="index.html">Home</a></li>
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   if(pagination) {
 
-    pagination.innerHTML = `<span style = "color: white;">1</span>
+    pagination.innerHTML = `<span>1</span>
                           <span>2</span>
                           <span>3</span>
                           <span>4</span>

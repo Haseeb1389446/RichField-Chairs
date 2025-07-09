@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background: #1B1717;
+    background: var(--primary-color);
 }
 
 ::selection {
@@ -25,7 +25,7 @@ h1 {
     color: #BE7A20;
     margin: 50px 0;
     font-size: 50px;
-    text-shadow: 3px 0px 7px #1B1717,
+    text-shadow: 3px 0px 7px var(--primary-color),
         -3px 0px 7px #1B1717,
         0px 4px 7px rgba(255, 255, 255, 0.8);
     text-transform: uppercase;
@@ -115,7 +115,7 @@ h1::first-letter {
 .content button {
     text-align: center;
     font-size: 24px;
-    color: #fff;
+    color: var(--primary-color);
     width: 100%;
     padding: 15px;
     border: 0;

@@ -322,11 +322,11 @@ body {
 .pagination span{
     border: 2px solid #be7920;
     padding: 15px 20px;
-    color: rgb(163, 161, 161);
+    color: var(--secondary-color);
     margin-right: 10px;
     border-radius: 3px;
     cursor: pointer;
-    background-color: #2e2626;
+    background-color: var(--primary-color);
 }
 
 .pagination span:hover{
